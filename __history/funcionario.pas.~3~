@@ -1,0 +1,36 @@
+unit funcionario;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, System.ImageList,
+  Vcl.ImgList, Vcl.RibbonLunaStyleActnCtrls, Vcl.Ribbon, System.Actions,
+  Vcl.ActnList, Vcl.PlatformDefaultStyleActnCtrls, Vcl.ActnMan, Vcl.ToolWin,
+  Vcl.ActnCtrls, Vcl.ExtCtrls;
+
+type
+  TForm3 = class(TForm)
+    ImageList1: TImageList;
+    Ribbon1: TRibbon;
+    ActionManager1: TActionManager;
+    Atualizar: TAction;
+    Cadastrar: TAction;
+    Editar: TAction;
+    Excluir: TAction;
+    RibbonPage1: TRibbonPage;
+    RibbonGroup1: TRibbonGroup;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form3: TForm3;
+
+implementation
+
+{$R *.dfm}
+
+end.

@@ -5,7 +5,7 @@ object Form1: TForm1
   Align = alClient
   AlphaBlend = True
   Caption = 'Sistema Canil JVR'
-  ClientHeight = 463
+  ClientHeight = 635
   ClientWidth = 752
   Color = clWhite
   Font.Charset = ANSI_CHARSET
@@ -5752,6 +5752,16 @@ object Form1: TForm1
       OnClick = Image2Click
       ExplicitHeight = 50
     end
+  end
+  object Panel2: TPanel
+    Left = 0
+    Top = 50
+    Width = 752
+    Height = 585
+    Align = alClient
+    TabOrder = 1
+    Visible = False
+    ExplicitTop = 53
   end
   object ImageList1: TImageList
     Height = 32

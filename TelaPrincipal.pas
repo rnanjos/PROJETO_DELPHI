@@ -14,6 +14,7 @@ type
     Panel1: TPanel;
     Image1: TImage;
     Image2: TImage;
+    Panel2: TPanel;
     procedure Image2Click(Sender: TObject);
   private
     { Private declarations }
@@ -32,7 +33,9 @@ uses menu;
 
 procedure TForm1.Image2Click(Sender: TObject);
 begin
-Form2.ShowModal;
+Panel2.visible := true;
+Form2.Show;
+Form2.Parent := Panel2;
 end;
 
 end.
