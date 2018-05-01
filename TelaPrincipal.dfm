@@ -5513,9 +5513,11 @@ object Form1: TForm1
       Top = 1
       Width = 50
       Height = 44
+      Hint = 'Menu'
       Align = alLeft
       AutoSize = True
       Center = True
+      DragCursor = crHandPoint
       Picture.Data = {
         0A544A504547496D616765D31C0000FFD8FFE000104A46494600010101005F00
         5F0000FFE100804578696600004D4D002A000000080004011A00050000000100
@@ -5761,7 +5763,7 @@ object Form1: TForm1
     Align = alClient
     TabOrder = 1
     Visible = False
-    ExplicitTop = 53
+    OnClick = Panel2Click
   end
   object ImageList1: TImageList
     Height = 32

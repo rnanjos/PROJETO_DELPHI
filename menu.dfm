@@ -13,6 +13,7 @@ object Form2: TForm2
   Font.Name = 'Trebuchet MS'
   Font.Style = []
   OldCreateOrder = False
+  WindowState = wsMaximized
   PixelsPerInch = 96
   TextHeight = 16
   object Label1: TLabel

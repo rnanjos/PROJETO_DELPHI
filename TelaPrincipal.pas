@@ -16,6 +16,7 @@ type
     Image2: TImage;
     Panel2: TPanel;
     procedure Image2Click(Sender: TObject);
+    procedure Panel2Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -36,6 +37,11 @@ begin
 Panel2.visible := true;
 Form2.Show;
 Form2.Parent := Panel2;
+end;
+
+procedure TForm1.Panel2Click(Sender: TObject);
+begin
+ShowWindow(Handle, SW_MAXIMIZE)
 end;
 
 end.
