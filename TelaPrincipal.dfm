@@ -149,7 +149,7 @@ object Form1: TForm1
     0000000000000000000000000000000000000000000000000000000000000000
     000000000000000000000000000000000000000000000000000000000000}
   OldCreateOrder = False
-  Position = poScreenCenter
+  Position = poDesktopCenter
   WindowState = wsMaximized
   PixelsPerInch = 96
   TextHeight = 22
@@ -5504,6 +5504,8 @@ object Form1: TForm1
     Width = 752
     Height = 50
     Align = alTop
+    Anchors = [akLeft, akTop, akRight, akBottom]
+    AutoSize = True
     BorderStyle = bsSingle
     Color = clCream
     ParentBackground = False
@@ -5761,6 +5763,7 @@ object Form1: TForm1
     Width = 752
     Height = 585
     Align = alClient
+    AutoSize = True
     TabOrder = 1
     Visible = False
     OnClick = Panel2Click

@@ -2,8 +2,8 @@
 <BorlandProject>
 	<Transactions>
     <Transaction>2018/04/29 11:24:18.000.147,=C:\Users\Renato\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2018/04/29 11:29:42.000.568,C:\Users\Renato\Documents\GitHub\PROJETO_DELPHI\TelaPrincipal.pas=C:\Users\Renato\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
     <Transaction>2018/04/29 11:29:42.000.568,C:\Users\Renato\Documents\GitHub\PROJETO_DELPHI\TelaPrincipal.dfm=C:\Users\Renato\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2018/04/29 11:29:42.000.568,C:\Users\Renato\Documents\GitHub\PROJETO_DELPHI\TelaPrincipal.pas=C:\Users\Renato\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
     <Transaction>2018/04/29 11:29:46.000.520,C:\Users\Renato\Documents\GitHub\PROJETO_DELPHI\Canil.dproj=C:\Users\Renato\Documents\Embarcadero\Studio\Projects\Project2.dproj</Transaction>
     <Transaction>2018/04/29 12:32:17.000.286,=C:\Users\Renato\Documents\GitHub\PROJETO_DELPHI\Unit2.pas</Transaction>
     <Transaction>2018/04/29 12:32:49.000.879,C:\Users\Renato\Documents\GitHub\PROJETO_DELPHI\menu.pas=C:\Users\Renato\Documents\GitHub\PROJETO_DELPHI\Unit2.pas</Transaction>
@@ -11,6 +11,7 @@
     <Transaction>2018/04/29 17:50:28.000.758,=C:\Users\Renato\Documents\GitHub\PROJETO_DELPHI\Unit3.pas</Transaction>
     <Transaction>2018/04/29 18:08:04.000.097,C:\Users\Renato\Documents\GitHub\PROJETO_DELPHI\funcionario.dfm=C:\Users\Renato\Documents\GitHub\PROJETO_DELPHI\Unit3.dfm</Transaction>
     <Transaction>2018/04/29 18:08:04.000.097,C:\Users\Renato\Documents\GitHub\PROJETO_DELPHI\funcionario.pas=C:\Users\Renato\Documents\GitHub\PROJETO_DELPHI\Unit3.pas</Transaction>
+    <Transaction>2018/05/02 22:14:32.000.048,=C:\Users\Renato\Documents\GitHub\PROJETO_DELPHI\Unit4.pas</Transaction>
   </Transactions>
 	<ProjectSortOrder AutoSort="0" SortType="0">
     <File Path="funcionario.pas"/>

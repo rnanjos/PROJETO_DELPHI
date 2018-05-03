@@ -15,530 +15,6 @@ object Form3: TForm3
   WindowState = wsMaximized
   PixelsPerInch = 96
   TextHeight = 13
-  object Panel1: TPanel
-    Left = 0
-    Top = 143
-    Width = 1370
-    Height = 606
-    Align = alClient
-    Color = cl3DLight
-    ParentBackground = False
-    TabOrder = 0
-    object Label6: TLabel
-      Left = 728
-      Top = 128
-      Width = 28
-      Height = 13
-      Caption = 'Bairro'
-    end
-    object GroupBox1: TGroupBox
-      Left = 4
-      Top = 40
-      Width = 894
-      Height = 234
-      Caption = 'Informa'#231#245'es Pessoais'
-      TabOrder = 0
-      object Label1: TLabel
-        Left = 16
-        Top = 29
-        Width = 27
-        Height = 13
-        Caption = 'Nome'
-      end
-      object Label2: TLabel
-        Left = 16
-        Top = 85
-        Width = 45
-        Height = 13
-        Caption = 'Endere'#231'o'
-      end
-      object Label3: TLabel
-        Left = 575
-        Top = 86
-        Width = 37
-        Height = 13
-        Caption = 'Numero'
-      end
-      object Label4: TLabel
-        Left = 576
-        Top = 32
-        Width = 96
-        Height = 13
-        Caption = 'Data de Nascimento'
-      end
-      object Label5: TLabel
-        Left = 728
-        Top = 32
-        Width = 24
-        Height = 13
-        Caption = 'Sexo'
-      end
-      object Label7: TLabel
-        Left = 16
-        Top = 140
-        Width = 65
-        Height = 13
-        Caption = 'Complemento'
-      end
-      object Label8: TLabel
-        Left = 303
-        Top = 140
-        Width = 28
-        Height = 13
-        Caption = 'Bairro'
-      end
-      object Label9: TLabel
-        Left = 575
-        Top = 141
-        Width = 19
-        Height = 13
-        Caption = 'CEP'
-      end
-      object Edit1: TEdit
-        Left = 16
-        Top = 48
-        Width = 553
-        Height = 30
-        AutoSize = False
-        CharCase = ecUpperCase
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -16
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 0
-      end
-      object Edit2: TEdit
-        Left = 16
-        Top = 104
-        Width = 553
-        Height = 30
-        AutoSize = False
-        CharCase = ecUpperCase
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -16
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 1
-      end
-      object Edit3: TEdit
-        Left = 575
-        Top = 105
-        Width = 146
-        Height = 30
-        AutoSize = False
-        CharCase = ecUpperCase
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -16
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 2
-      end
-      object Edit6: TEdit
-        Left = 727
-        Top = 105
-        Width = 154
-        Height = 30
-        AutoSize = False
-        CharCase = ecUpperCase
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -16
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 3
-      end
-      object Edit7: TEdit
-        Left = 16
-        Top = 159
-        Width = 281
-        Height = 30
-        AutoSize = False
-        CharCase = ecUpperCase
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -16
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 4
-      end
-      object Edit8: TEdit
-        Left = 303
-        Top = 159
-        Width = 266
-        Height = 30
-        AutoSize = False
-        CharCase = ecUpperCase
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -16
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 5
-      end
-      object Edit9: TEdit
-        Left = 575
-        Top = 159
-        Width = 146
-        Height = 30
-        AutoSize = False
-        CharCase = ecUpperCase
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -16
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 6
-      end
-      object ComboBox1: TComboBox
-        Left = 727
-        Top = 48
-        Width = 145
-        Height = 29
-        AutoComplete = False
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -17
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 7
-        Text = 'ComboBox1'
-      end
-      object DateTimePicker1: TDateTimePicker
-        Left = 575
-        Top = 48
-        Width = 146
-        Height = 29
-        Date = 43220.840492500000000000
-        Time = 43220.840492500000000000
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -17
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 8
-      end
-    end
-    object GroupBox2: TGroupBox
-      Left = 928
-      Top = 40
-      Width = 433
-      Height = 234
-      Caption = 'Contato'
-      TabOrder = 1
-      object Label10: TLabel
-        Left = 16
-        Top = 29
-        Width = 34
-        Height = 13
-        Caption = 'Tefone'
-      end
-      object Label11: TLabel
-        Left = 224
-        Top = 29
-        Width = 33
-        Height = 13
-        Caption = 'Celular'
-      end
-      object Label12: TLabel
-        Left = 16
-        Top = 84
-        Width = 28
-        Height = 13
-        Caption = 'E-mail'
-      end
-      object Edit5: TEdit
-        Left = 16
-        Top = 48
-        Width = 193
-        Height = 30
-        AutoSize = False
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -16
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 0
-      end
-      object Edit10: TEdit
-        Left = 224
-        Top = 48
-        Width = 193
-        Height = 30
-        AutoSize = False
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -16
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 1
-      end
-      object Edit11: TEdit
-        Left = 16
-        Top = 104
-        Width = 401
-        Height = 30
-        AutoSize = False
-        CharCase = ecUpperCase
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -16
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 2
-      end
-    end
-    object GroupBox3: TGroupBox
-      Left = 4
-      Top = 296
-      Width = 894
-      Height = 289
-      Caption = 'Informa'#231#245'es Trabalhista'
-      TabOrder = 2
-      object Label13: TLabel
-        Left = 16
-        Top = 40
-        Width = 43
-        Height = 13
-        Caption = 'Matr'#237'cula'
-      end
-      object Label14: TLabel
-        Left = 119
-        Top = 40
-        Width = 20
-        Height = 13
-        Caption = 'Tipo'
-      end
-      object Label15: TLabel
-        Left = 255
-        Top = 41
-        Width = 29
-        Height = 13
-        Caption = 'Cargo'
-      end
-      object Label16: TLabel
-        Left = 406
-        Top = 42
-        Width = 41
-        Height = 13
-        Caption = 'Situa'#231#227'o'
-      end
-      object Label17: TLabel
-        Left = 557
-        Top = 42
-        Width = 86
-        Height = 13
-        Caption = 'Data de Admiss'#227'o'
-      end
-      object Label18: TLabel
-        Left = 16
-        Top = 96
-        Width = 22
-        Height = 13
-        Caption = 'CRO'
-      end
-      object Label19: TLabel
-        Left = 119
-        Top = 96
-        Width = 19
-        Height = 13
-        Caption = 'CPF'
-      end
-      object Label20: TLabel
-        Left = 390
-        Top = 96
-        Width = 14
-        Height = 13
-        Caption = 'RG'
-      end
-      object Label21: TLabel
-        Left = 661
-        Top = 96
-        Width = 51
-        Height = 13
-        Caption = 'Reservista'
-      end
-      object Label22: TLabel
-        Left = 708
-        Top = 41
-        Width = 45
-        Height = 13
-        Caption = 'Demiss'#227'o'
-      end
-      object Edit12: TEdit
-        Left = 16
-        Top = 59
-        Width = 97
-        Height = 30
-        AutoSize = False
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -17
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 0
-      end
-      object ComboBox2: TComboBox
-        Left = 119
-        Top = 60
-        Width = 130
-        Height = 29
-        CharCase = ecUpperCase
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -17
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 1
-        Items.Strings = (
-          'CLT'
-          'TERCEIRIZADO'
-          'ESTAGI'#193'RIO'
-          'VOLUNTARIO'
-          'PROPRIET'#193'RIO')
-      end
-      object ComboBox3: TComboBox
-        Left = 255
-        Top = 61
-        Width = 145
-        Height = 29
-        CharCase = ecUpperCase
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -17
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 2
-      end
-      object ComboBox4: TComboBox
-        Left = 406
-        Top = 61
-        Width = 145
-        Height = 29
-        CharCase = ecUpperCase
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -17
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 3
-        Items.Strings = (
-          'EM ATIVIDADE'
-          'EM F'#201'RIAS'
-          'AFASTADO'
-          'TREINAMENTO'
-          'INATIVO')
-      end
-      object DateTimePicker2: TDateTimePicker
-        Left = 557
-        Top = 61
-        Width = 145
-        Height = 29
-        Date = 43220.849628912040000000
-        Time = 43220.849628912040000000
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -17
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 4
-      end
-      object DateTimePicker3: TDateTimePicker
-        Left = 708
-        Top = 60
-        Width = 145
-        Height = 29
-        Date = 43220.850505300930000000
-        Time = 43220.850505300930000000
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -17
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 5
-      end
-      object Edit4: TEdit
-        Left = 16
-        Top = 115
-        Width = 97
-        Height = 30
-        AutoSize = False
-        CharCase = ecUpperCase
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -17
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 6
-      end
-      object Edit13: TEdit
-        Left = 119
-        Top = 115
-        Width = 265
-        Height = 30
-        AutoSize = False
-        CharCase = ecUpperCase
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -17
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 7
-      end
-      object Edit14: TEdit
-        Left = 390
-        Top = 115
-        Width = 265
-        Height = 30
-        AutoSize = False
-        CharCase = ecUpperCase
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -17
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 8
-      end
-      object Edit15: TEdit
-        Left = 661
-        Top = 115
-        Width = 176
-        Height = 30
-        AutoSize = False
-        CharCase = ecUpperCase
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -17
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 9
-      end
-    end
-  end
   object Ribbon1: TRibbon
     Left = 0
     Top = 0
@@ -568,12 +44,569 @@ object Form3: TForm3
       object RibbonGroup1: TRibbonGroup
         Left = 4
         Top = 3
-        Width = 168
+        Width = 273
         Height = 86
         ActionManager = ActionManager1
         GroupAlign = gaHorizontal
         GroupIndex = 0
       end
+    end
+  end
+  object PageControl1: TPageControl
+    Left = 0
+    Top = 143
+    Width = 1370
+    Height = 606
+    ActivePage = TabSheet1
+    Align = alClient
+    TabOrder = 1
+    object TabSheet1: TTabSheet
+      Caption = 'Consulta'
+    end
+    object TabSheet2: TTabSheet
+      Caption = 'Cadastro'
+      ImageIndex = 1
+      object Panel1: TPanel
+        Left = 0
+        Top = 0
+        Width = 1362
+        Height = 578
+        Align = alClient
+        Color = cl3DLight
+        ParentBackground = False
+        TabOrder = 0
+        ExplicitTop = 143
+        ExplicitWidth = 1370
+        ExplicitHeight = 606
+        object Label6: TLabel
+          Left = 728
+          Top = 128
+          Width = 28
+          Height = 13
+          Caption = 'Bairro'
+        end
+        object GroupBox1: TGroupBox
+          Left = 4
+          Top = 40
+          Width = 894
+          Height = 234
+          Caption = 'Informa'#231#245'es Pessoais'
+          TabOrder = 0
+          object Label1: TLabel
+            Left = 16
+            Top = 29
+            Width = 27
+            Height = 13
+            Caption = 'Nome'
+          end
+          object Label2: TLabel
+            Left = 16
+            Top = 85
+            Width = 45
+            Height = 13
+            Caption = 'Endere'#231'o'
+          end
+          object Label3: TLabel
+            Left = 575
+            Top = 86
+            Width = 37
+            Height = 13
+            Caption = 'Numero'
+          end
+          object Label4: TLabel
+            Left = 576
+            Top = 32
+            Width = 96
+            Height = 13
+            Caption = 'Data de Nascimento'
+          end
+          object Label5: TLabel
+            Left = 728
+            Top = 32
+            Width = 24
+            Height = 13
+            Caption = 'Sexo'
+          end
+          object Label7: TLabel
+            Left = 16
+            Top = 140
+            Width = 65
+            Height = 13
+            Caption = 'Complemento'
+          end
+          object Label8: TLabel
+            Left = 303
+            Top = 140
+            Width = 28
+            Height = 13
+            Caption = 'Bairro'
+          end
+          object Label9: TLabel
+            Left = 575
+            Top = 141
+            Width = 19
+            Height = 13
+            Caption = 'CEP'
+          end
+          object Edit1: TEdit
+            Left = 16
+            Top = 48
+            Width = 553
+            Height = 30
+            AutoSize = False
+            CharCase = ecUpperCase
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -16
+            Font.Name = 'Tahoma'
+            Font.Style = []
+            ParentFont = False
+            TabOrder = 0
+          end
+          object Edit2: TEdit
+            Left = 16
+            Top = 104
+            Width = 553
+            Height = 30
+            AutoSize = False
+            CharCase = ecUpperCase
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -16
+            Font.Name = 'Tahoma'
+            Font.Style = []
+            ParentFont = False
+            TabOrder = 1
+          end
+          object Edit3: TEdit
+            Left = 575
+            Top = 105
+            Width = 146
+            Height = 30
+            AutoSize = False
+            CharCase = ecUpperCase
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -16
+            Font.Name = 'Tahoma'
+            Font.Style = []
+            ParentFont = False
+            TabOrder = 2
+          end
+          object Edit6: TEdit
+            Left = 727
+            Top = 105
+            Width = 154
+            Height = 30
+            AutoSize = False
+            CharCase = ecUpperCase
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -16
+            Font.Name = 'Tahoma'
+            Font.Style = []
+            ParentFont = False
+            TabOrder = 3
+          end
+          object Edit7: TEdit
+            Left = 16
+            Top = 159
+            Width = 281
+            Height = 30
+            AutoSize = False
+            CharCase = ecUpperCase
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -16
+            Font.Name = 'Tahoma'
+            Font.Style = []
+            ParentFont = False
+            TabOrder = 4
+          end
+          object Edit8: TEdit
+            Left = 303
+            Top = 159
+            Width = 266
+            Height = 30
+            AutoSize = False
+            CharCase = ecUpperCase
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -16
+            Font.Name = 'Tahoma'
+            Font.Style = []
+            ParentFont = False
+            TabOrder = 5
+          end
+          object Edit9: TEdit
+            Left = 575
+            Top = 159
+            Width = 146
+            Height = 30
+            AutoSize = False
+            CharCase = ecUpperCase
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -16
+            Font.Name = 'Tahoma'
+            Font.Style = []
+            ParentFont = False
+            TabOrder = 6
+          end
+          object ComboBox1: TComboBox
+            Left = 727
+            Top = 48
+            Width = 145
+            Height = 29
+            AutoComplete = False
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -17
+            Font.Name = 'Tahoma'
+            Font.Style = []
+            ParentFont = False
+            TabOrder = 7
+            Text = 'ComboBox1'
+          end
+          object DateTimePicker1: TDateTimePicker
+            Left = 575
+            Top = 48
+            Width = 146
+            Height = 29
+            Date = 43220.840492500000000000
+            Time = 43220.840492500000000000
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -17
+            Font.Name = 'Tahoma'
+            Font.Style = []
+            ParentFont = False
+            TabOrder = 8
+          end
+        end
+        object GroupBox2: TGroupBox
+          Left = 928
+          Top = 40
+          Width = 433
+          Height = 234
+          Caption = 'Contato'
+          TabOrder = 1
+          object Label10: TLabel
+            Left = 16
+            Top = 29
+            Width = 34
+            Height = 13
+            Caption = 'Tefone'
+          end
+          object Label11: TLabel
+            Left = 224
+            Top = 29
+            Width = 33
+            Height = 13
+            Caption = 'Celular'
+          end
+          object Label12: TLabel
+            Left = 16
+            Top = 84
+            Width = 28
+            Height = 13
+            Caption = 'E-mail'
+          end
+          object Edit5: TEdit
+            Left = 16
+            Top = 48
+            Width = 193
+            Height = 30
+            AutoSize = False
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -16
+            Font.Name = 'Tahoma'
+            Font.Style = []
+            ParentFont = False
+            TabOrder = 0
+          end
+          object Edit10: TEdit
+            Left = 224
+            Top = 48
+            Width = 193
+            Height = 30
+            AutoSize = False
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -16
+            Font.Name = 'Tahoma'
+            Font.Style = []
+            ParentFont = False
+            TabOrder = 1
+          end
+          object Edit11: TEdit
+            Left = 16
+            Top = 104
+            Width = 401
+            Height = 30
+            AutoSize = False
+            CharCase = ecUpperCase
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -16
+            Font.Name = 'Tahoma'
+            Font.Style = []
+            ParentFont = False
+            TabOrder = 2
+          end
+        end
+        object GroupBox3: TGroupBox
+          Left = 4
+          Top = 199
+          Width = 894
+          Height = 289
+          Caption = 'Informa'#231#245'es Trabalhista'
+          TabOrder = 2
+          object Label13: TLabel
+            Left = 16
+            Top = 40
+            Width = 43
+            Height = 13
+            Caption = 'Matr'#237'cula'
+          end
+          object Label14: TLabel
+            Left = 119
+            Top = 40
+            Width = 20
+            Height = 13
+            Caption = 'Tipo'
+          end
+          object Label15: TLabel
+            Left = 255
+            Top = 41
+            Width = 29
+            Height = 13
+            Caption = 'Cargo'
+          end
+          object Label16: TLabel
+            Left = 406
+            Top = 42
+            Width = 41
+            Height = 13
+            Caption = 'Situa'#231#227'o'
+          end
+          object Label17: TLabel
+            Left = 557
+            Top = 42
+            Width = 86
+            Height = 13
+            Caption = 'Data de Admiss'#227'o'
+          end
+          object Label18: TLabel
+            Left = 16
+            Top = 96
+            Width = 22
+            Height = 13
+            Caption = 'CRO'
+          end
+          object Label19: TLabel
+            Left = 119
+            Top = 96
+            Width = 19
+            Height = 13
+            Caption = 'CPF'
+          end
+          object Label20: TLabel
+            Left = 390
+            Top = 96
+            Width = 14
+            Height = 13
+            Caption = 'RG'
+          end
+          object Label21: TLabel
+            Left = 661
+            Top = 96
+            Width = 51
+            Height = 13
+            Caption = 'Reservista'
+          end
+          object Label22: TLabel
+            Left = 708
+            Top = 41
+            Width = 45
+            Height = 13
+            Caption = 'Demiss'#227'o'
+          end
+          object Edit12: TEdit
+            Left = 16
+            Top = 59
+            Width = 97
+            Height = 30
+            AutoSize = False
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -17
+            Font.Name = 'Tahoma'
+            Font.Style = []
+            ParentFont = False
+            TabOrder = 0
+          end
+          object ComboBox2: TComboBox
+            Left = 119
+            Top = 60
+            Width = 130
+            Height = 29
+            CharCase = ecUpperCase
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -17
+            Font.Name = 'Tahoma'
+            Font.Style = []
+            ParentFont = False
+            TabOrder = 1
+            Items.Strings = (
+              'CLT'
+              'TERCEIRIZADO'
+              'ESTAGI'#193'RIO'
+              'VOLUNTARIO'
+              'PROPRIET'#193'RIO')
+          end
+          object ComboBox3: TComboBox
+            Left = 255
+            Top = 61
+            Width = 145
+            Height = 29
+            CharCase = ecUpperCase
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -17
+            Font.Name = 'Tahoma'
+            Font.Style = []
+            ParentFont = False
+            TabOrder = 2
+          end
+          object ComboBox4: TComboBox
+            Left = 406
+            Top = 61
+            Width = 145
+            Height = 29
+            CharCase = ecUpperCase
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -17
+            Font.Name = 'Tahoma'
+            Font.Style = []
+            ParentFont = False
+            TabOrder = 3
+            Items.Strings = (
+              'EM ATIVIDADE'
+              'EM F'#201'RIAS'
+              'AFASTADO'
+              'TREINAMENTO'
+              'INATIVO')
+          end
+          object DateTimePicker2: TDateTimePicker
+            Left = 557
+            Top = 61
+            Width = 145
+            Height = 29
+            Date = 43220.849628912040000000
+            Time = 43220.849628912040000000
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -17
+            Font.Name = 'Tahoma'
+            Font.Style = []
+            ParentFont = False
+            TabOrder = 4
+          end
+          object DateTimePicker3: TDateTimePicker
+            Left = 708
+            Top = 60
+            Width = 145
+            Height = 29
+            Date = 43220.850505300930000000
+            Time = 43220.850505300930000000
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -17
+            Font.Name = 'Tahoma'
+            Font.Style = []
+            ParentFont = False
+            TabOrder = 5
+          end
+          object Edit4: TEdit
+            Left = 16
+            Top = 115
+            Width = 97
+            Height = 30
+            AutoSize = False
+            CharCase = ecUpperCase
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -17
+            Font.Name = 'Tahoma'
+            Font.Style = []
+            ParentFont = False
+            TabOrder = 6
+          end
+          object Edit13: TEdit
+            Left = 119
+            Top = 115
+            Width = 265
+            Height = 30
+            AutoSize = False
+            CharCase = ecUpperCase
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -17
+            Font.Name = 'Tahoma'
+            Font.Style = []
+            ParentFont = False
+            TabOrder = 7
+          end
+          object Edit14: TEdit
+            Left = 390
+            Top = 115
+            Width = 265
+            Height = 30
+            AutoSize = False
+            CharCase = ecUpperCase
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -17
+            Font.Name = 'Tahoma'
+            Font.Style = []
+            ParentFont = False
+            TabOrder = 8
+          end
+          object Edit15: TEdit
+            Left = 661
+            Top = 115
+            Width = 176
+            Height = 30
+            AutoSize = False
+            CharCase = ecUpperCase
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -17
+            Font.Name = 'Tahoma'
+            Font.Style = []
+            ParentFont = False
+            TabOrder = 9
+          end
+        end
+      end
+    end
+  end
+  object TabControl1: TTabControl
+    Left = 8
+    Top = 167
+    Width = 361
+    Height = 193
+    TabOrder = 2
+    object StringGrid1: TStringGrid
+      Left = 3
+      Top = 24
+      Width = 320
+      Height = 120
+      TabOrder = 0
     end
   end
   object ImageList1: TImageList
@@ -582,7 +615,7 @@ object Form3: TForm3
     Left = 592
     Top = 72
     Bitmap = {
-      494C010104002400400020002000FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
+      494C010104002400480020002000FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
       0000000000003600000028000000800000004000000001002000000000000080
       0000000000000000000000000000000000000000000000000000000000000000
       0000000000000000000000000000000000000000000000000000000000000000
@@ -1707,6 +1740,30 @@ object Form3: TForm3
             ImageIndex = 3
             CommandProperties.Width = -1
           end>
+      end
+      item
+        Items = <
+          item
+            Action = Atualizar
+            Caption = '&Atualizar'
+            ImageIndex = 0
+          end
+          item
+            Action = Cadastrar
+            Caption = '&Cadastrar'
+            ImageIndex = 1
+          end
+          item
+            Action = Excluir
+            Caption = 'E&xcluir'
+            ImageIndex = 3
+          end
+          item
+            Action = Editar
+            Caption = '&Editar'
+            ImageIndex = 2
+          end>
+        ActionBar = RibbonGroup1
       end>
     DisabledImages = ImageList1
     LargeImages = ImageList1
