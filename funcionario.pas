@@ -12,11 +12,6 @@ uses
 type
   TForm3 = class(TForm)
     ImageList1: TImageList;
-    ActionManager1: TActionManager;
-    Atualizar: TAction;
-    Cadastrar: TAction;
-    Editar: TAction;
-    Excluir: TAction;
     Ribbon1: TRibbon;
     RibbonPage1: TRibbonPage;
     RibbonGroup1: TRibbonGroup;
@@ -71,8 +66,14 @@ type
     Edit13: TEdit;
     Edit14: TEdit;
     Edit15: TEdit;
-    TabControl1: TTabControl;
+    Label23: TLabel;
     StringGrid1: TStringGrid;
+    ActionManager1: TActionManager;
+    Action1: TAction;
+    Action2: TAction;
+    Action3: TAction;
+    Action4: TAction;
+    Action5: TAction;
   private
     { Private declarations }
   public
