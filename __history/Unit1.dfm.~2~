@@ -1,0 +1,128 @@
+object DataModule1: TDataModule1
+  OldCreateOrder = False
+  Height = 311
+  Width = 572
+  object FDConnection1: TFDConnection
+    Params.Strings = (
+      'SERVER=DESKTOP-GOVCGFF\SQLEXPRESS01'
+      'OSAuthent=Yes'
+      'ApplicationName=Enterprise/Architect/Ultimate'
+      'Workstation=DESKTOP-GOVCGFF'
+      'MARS=yes'
+      'DATABASE=SISTEMA_CANIL'
+      'DriverID=MSSQL')
+    Connected = True
+    LoginPrompt = False
+    Transaction = Trans
+    Left = 464
+    Top = 48
+  end
+  object Trans: TFDTransaction
+    Connection = FDConnection1
+    Left = 424
+    Top = 48
+  end
+  object FDGUIxWaitCursor1: TFDGUIxWaitCursor
+    Provider = 'Forms'
+    Left = 376
+    Top = 48
+  end
+  object FDQuery1: TFDQuery
+    Active = True
+    Connection = FDConnection1
+    SQL.Strings = (
+      'select * from funcionario')
+    Left = 432
+    Top = 112
+    object FDQuery1ID_FUN: TIntegerField
+      DisplayWidth = 7
+      FieldName = 'ID_FUN'
+      Origin = 'ID_FUN'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      Required = True
+    end
+    object FDQuery1NOME: TStringField
+      DisplayWidth = 50
+      FieldName = 'NOME'
+      Origin = 'NOME'
+      Size = 50
+    end
+    object FDQuery1CPF: TStringField
+      DisplayWidth = 11
+      FieldName = 'CPF'
+      Origin = 'CPF'
+      Size = 11
+    end
+    object FDQuery1MATRICULA: TBCDField
+      DisplayWidth = 19
+      FieldName = 'MATRICULA'
+      Origin = 'MATRICULA'
+      Precision = 18
+      Size = 0
+    end
+    object FDQuery1ENDERECO: TStringField
+      DisplayWidth = 63
+      FieldName = 'ENDERECO'
+      Origin = 'ENDERECO'
+      Size = 100
+    end
+    object FDQuery1NUMERO: TBCDField
+      DisplayWidth = 9
+      FieldName = 'NUMERO'
+      Origin = 'NUMERO'
+      Precision = 18
+      Size = 0
+    end
+    object FDQuery1BAIRRO: TStringField
+      DisplayWidth = 34
+      FieldName = 'BAIRRO'
+      Origin = 'BAIRRO'
+      Size = 50
+    end
+    object FDQuery1CIDADE: TStringField
+      DisplayWidth = 50
+      FieldName = 'CIDADE'
+      Origin = 'CIDADE'
+      Size = 50
+    end
+    object FDQuery1CEP: TStringField
+      DisplayWidth = 11
+      FieldName = 'CEP'
+      Origin = 'CEP'
+      Size = 11
+    end
+    object FDQuery1TELEFONE: TStringField
+      DisplayWidth = 20
+      FieldName = 'TELEFONE'
+      Origin = 'TELEFONE'
+    end
+    object FDQuery1CELULAR: TStringField
+      DisplayWidth = 20
+      FieldName = 'CELULAR'
+      Origin = 'CELULAR'
+    end
+    object FDQuery1EMAIL: TStringField
+      DisplayWidth = 50
+      FieldName = 'EMAIL'
+      Origin = 'EMAIL'
+      Size = 50
+    end
+    object FDQuery1CARGO: TStringField
+      DisplayWidth = 50
+      FieldName = 'CARGO'
+      Origin = 'CARGO'
+      Size = 50
+    end
+    object FDQuery1SITUACAO: TStringField
+      DisplayWidth = 50
+      FieldName = 'SITUACAO'
+      Origin = 'SITUACAO'
+      Size = 50
+    end
+  end
+  object DataSource1: TDataSource
+    DataSet = FDQuery1
+    Left = 352
+    Top = 120
+  end
+end

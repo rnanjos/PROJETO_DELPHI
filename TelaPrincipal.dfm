@@ -5504,8 +5504,7 @@ object Form1: TForm1
     Width = 752
     Height = 50
     Align = alTop
-    Anchors = [akLeft, akTop, akRight, akBottom]
-    AutoSize = True
+    Anchors = [akTop]
     BorderStyle = bsSingle
     Color = clCream
     ParentBackground = False

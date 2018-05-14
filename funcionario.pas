@@ -1,5 +1,6 @@
 unit funcionario;
 
+
 interface
 
 uses
@@ -7,7 +8,8 @@ uses
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, System.ImageList,
   Vcl.ImgList, Vcl.RibbonLunaStyleActnCtrls, Vcl.Ribbon, System.Actions,
   Vcl.ActnList, Vcl.PlatformDefaultStyleActnCtrls, Vcl.ActnMan, Vcl.ToolWin,
-  Vcl.ActnCtrls, Vcl.ExtCtrls, Vcl.Menus, Vcl.ComCtrls, Vcl.Grids;
+  Vcl.ActnCtrls, Vcl.ExtCtrls, Vcl.Menus, Vcl.ComCtrls, Vcl.Grids, Data.DB,
+  Vcl.DBGrids, Vcl.DBCtrls, Vcl.Mask;
 
 type
   TForm3 = class(TForm)
@@ -15,11 +17,15 @@ type
     Ribbon1: TRibbon;
     RibbonPage1: TRibbonPage;
     RibbonGroup1: TRibbonGroup;
+    ActionManager1: TActionManager;
+    Action1: TAction;
+    Action2: TAction;
+    Action3: TAction;
+    Action4: TAction;
+    Action5: TAction;
     PageControl1: TPageControl;
-    TabSheet1: TTabSheet;
     TabSheet2: TTabSheet;
     Panel1: TPanel;
-    Label6: TLabel;
     GroupBox1: TGroupBox;
     Label1: TLabel;
     Label2: TLabel;
@@ -29,22 +35,23 @@ type
     Label7: TLabel;
     Label8: TLabel;
     Label9: TLabel;
-    Edit1: TEdit;
-    Edit2: TEdit;
-    Edit3: TEdit;
-    Edit6: TEdit;
-    Edit7: TEdit;
-    Edit8: TEdit;
-    Edit9: TEdit;
-    ComboBox1: TComboBox;
+    Label6: TLabel;
+    Label23: TLabel;
     DateTimePicker1: TDateTimePicker;
+    DBEdit2: TDBEdit;
+    DBEdit3: TDBEdit;
+    DBComboBox1: TDBComboBox;
+    DBEdit5: TDBEdit;
+    DBEdit6: TDBEdit;
+    DBEdit7: TDBEdit;
+    DBEdit4: TDBEdit;
     GroupBox2: TGroupBox;
     Label10: TLabel;
     Label11: TLabel;
     Label12: TLabel;
-    Edit5: TEdit;
-    Edit10: TEdit;
-    Edit11: TEdit;
+    DBEdit11: TDBEdit;
+    DBEdit13: TDBEdit;
+    DBEdit14: TDBEdit;
     GroupBox3: TGroupBox;
     Label13: TLabel;
     Label14: TLabel;
@@ -56,24 +63,30 @@ type
     Label20: TLabel;
     Label21: TLabel;
     Label22: TLabel;
-    Edit12: TEdit;
-    ComboBox2: TComboBox;
-    ComboBox3: TComboBox;
-    ComboBox4: TComboBox;
     DateTimePicker2: TDateTimePicker;
     DateTimePicker3: TDateTimePicker;
-    Edit4: TEdit;
-    Edit13: TEdit;
-    Edit14: TEdit;
-    Edit15: TEdit;
-    Label23: TLabel;
-    StringGrid1: TStringGrid;
-    ActionManager1: TActionManager;
-    Action1: TAction;
-    Action2: TAction;
-    Action3: TAction;
-    Action4: TAction;
-    Action5: TAction;
+    DBEdit1: TDBEdit;
+    DBComboBox2: TDBComboBox;
+    DBComboBox3: TDBComboBox;
+    DBComboBox4: TDBComboBox;
+    DBEdit8: TDBEdit;
+    DBEdit9: TDBEdit;
+    DBEdit10: TDBEdit;
+    DBEdit12: TDBEdit;
+    TabSheet1: TTabSheet;
+    DBGrid1: TDBGrid;
+    DBEdit100: TDBEdit;
+    Edit1: TEdit;
+    Button1: TButton;
+    procedure Action2Execute(Sender: TObject);
+    procedure Action1Execute(Sender: TObject);
+    procedure DBGrid1Click(Sender: TObject);
+    procedure Button1Click(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
+procedure DBGrid1DrawColumnCell(Sender: TObject;
+  const Rect: TRect; DataCol: Integer; Column: TColumn;
+  State: TGridDrawState);
+
   private
     { Private declarations }
   public
@@ -82,9 +95,62 @@ type
 
 var
   Form3: TForm3;
+  var nome: string;
 
 implementation
 
 {$R *.dfm}
+
+uses Unit1;
+
+procedure TForm3.Action1Execute(Sender: TObject);
+begin
+TabSheet1.Show;
+end;
+
+procedure TForm3.Action2Execute(Sender: TObject);
+begin
+TabSheet2.Show;
+end;
+
+
+procedure TForm3.Button1Click(Sender: TObject);
+begin
+showmessage(nome);
+end;
+
+procedure TForm3.DBGrid1Click(Sender: TObject);
+begin
+    TabSheet2.Show;
+end;
+
+
+procedure TForm3.FormCreate(Sender: TObject);
+begin
+  DBGrid1.ControlStyle := DBGrid1.ControlStyle + [csClickEvents];
+  TForm(DBGrid1).OnClick := DBGrid1Click;
+end;
+
+procedure TForm3.DBGrid1DrawColumnCell(Sender: TObject;
+  const Rect: TRect; DataCol: Integer; Column: TColumn;
+  State: TGridDrawState);
+begin
+  if not odd(DataModule1.DataSource1.RecNo) then
+  begin
+    DBGrid1.Canvas.Brush.Color:= clMoneyGreen;
+    DBGrid1.Canvas.FillRect(Rect);
+    DBGrid1.DefaultDrawDataCell(Rect, Column.Field, State);
+
+    if gdFocused in State then
+    begin
+      DBGrid1.Canvas.Brush.Color:= clBlack;
+      DBGrid1.Canvas.FillRect(Rect);
+      DBGrid1.DefaultDrawDataCell(Rect, Column.Field, State);
+    end;
+  end;
+
+end;
+
+
 
 end.

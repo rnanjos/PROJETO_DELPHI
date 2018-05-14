@@ -1,7 +1,6 @@
 object Form3: TForm3
   Left = 0
   Top = -55
-  ActiveControl = PageControl1
   Caption = 'Form3'
   ClientHeight = 749
   ClientWidth = 1370
@@ -16,13 +15,6 @@ object Form3: TForm3
   WindowState = wsMaximized
   PixelsPerInch = 96
   TextHeight = 13
-  object Label23: TLabel
-    Left = 168
-    Top = 200
-    Width = 37
-    Height = 13
-    Caption = 'Label23'
-  end
   object Ribbon1: TRibbon
     Left = 0
     Top = 0
@@ -51,8 +43,9 @@ object Form3: TForm3
       object RibbonGroup1: TRibbonGroup
         Left = 4
         Top = 3
-        Width = 396
+        Width = 95
         Height = 86
+        Cursor = crHandPoint
         ActionManager = ActionManager1
         GroupAlign = gaHorizontal
         GroupIndex = 0
@@ -69,14 +62,23 @@ object Form3: TForm3
     TabOrder = 1
     object TabSheet1: TTabSheet
       Caption = 'Consulta'
-      ExplicitLeft = 0
-      ExplicitTop = -90
-      object StringGrid1: TStringGrid
-        Left = -4
-        Top = 0
-        Width = 1365
-        Height = 575
+      ExplicitLeft = 8
+      ExplicitTop = 72
+      object DBGrid1: TDBGrid
+        Left = 3
+        Top = 3
+        Width = 1358
+        Height = 542
+        DataSource = DataModule1.DataSource1
+        Options = [dgTitles, dgIndicator, dgColumnResize, dgColLines, dgRowLines, dgTabs, dgRowSelect, dgConfirmDelete, dgCancelOnExit, dgTitleClick, dgTitleHotTrack]
         TabOrder = 0
+        TitleFont.Charset = DEFAULT_CHARSET
+        TitleFont.Color = clWindowText
+        TitleFont.Height = -11
+        TitleFont.Name = 'Tahoma'
+        TitleFont.Style = []
+        OnDrawColumnCell = DBGrid1DrawColumnCell
+        OnDblClick = DBGrid1Click
       end
     end
     object TabSheet2: TTabSheet
@@ -91,13 +93,6 @@ object Form3: TForm3
         Color = cl3DLight
         ParentBackground = False
         TabOrder = 0
-        object Label6: TLabel
-          Left = 728
-          Top = 128
-          Width = 28
-          Height = 13
-          Caption = 'Bairro'
-        end
         object GroupBox1: TGroupBox
           Left = 4
           Top = 40
@@ -150,9 +145,9 @@ object Form3: TForm3
           object Label8: TLabel
             Left = 303
             Top = 140
-            Width = 28
+            Width = 33
             Height = 13
-            Caption = 'Bairro'
+            Caption = 'Cidade'
           end
           object Label9: TLabel
             Left = 575
@@ -161,125 +156,19 @@ object Form3: TForm3
             Height = 13
             Caption = 'CEP'
           end
-          object Edit1: TEdit
-            Left = 16
-            Top = 48
-            Width = 553
-            Height = 30
-            AutoSize = False
-            CharCase = ecUpperCase
-            Font.Charset = DEFAULT_CHARSET
-            Font.Color = clWindowText
-            Font.Height = -16
-            Font.Name = 'Tahoma'
-            Font.Style = []
-            ParentFont = False
-            TabOrder = 0
+          object Label6: TLabel
+            Left = 736
+            Top = 221
+            Width = 28
+            Height = 13
+            Caption = 'Bairro'
           end
-          object Edit2: TEdit
-            Left = 16
-            Top = 104
-            Width = 553
-            Height = 30
-            AutoSize = False
-            CharCase = ecUpperCase
-            Font.Charset = DEFAULT_CHARSET
-            Font.Color = clWindowText
-            Font.Height = -16
-            Font.Name = 'Tahoma'
-            Font.Style = []
-            ParentFont = False
-            TabOrder = 1
-          end
-          object Edit3: TEdit
-            Left = 575
-            Top = 105
-            Width = 146
-            Height = 30
-            AutoSize = False
-            CharCase = ecUpperCase
-            Font.Charset = DEFAULT_CHARSET
-            Font.Color = clWindowText
-            Font.Height = -16
-            Font.Name = 'Tahoma'
-            Font.Style = []
-            ParentFont = False
-            TabOrder = 2
-          end
-          object Edit6: TEdit
-            Left = 727
-            Top = 105
-            Width = 154
-            Height = 30
-            AutoSize = False
-            CharCase = ecUpperCase
-            Font.Charset = DEFAULT_CHARSET
-            Font.Color = clWindowText
-            Font.Height = -16
-            Font.Name = 'Tahoma'
-            Font.Style = []
-            ParentFont = False
-            TabOrder = 3
-          end
-          object Edit7: TEdit
-            Left = 16
-            Top = 159
-            Width = 281
-            Height = 30
-            AutoSize = False
-            CharCase = ecUpperCase
-            Font.Charset = DEFAULT_CHARSET
-            Font.Color = clWindowText
-            Font.Height = -16
-            Font.Name = 'Tahoma'
-            Font.Style = []
-            ParentFont = False
-            TabOrder = 4
-          end
-          object Edit8: TEdit
-            Left = 303
-            Top = 159
-            Width = 266
-            Height = 30
-            AutoSize = False
-            CharCase = ecUpperCase
-            Font.Charset = DEFAULT_CHARSET
-            Font.Color = clWindowText
-            Font.Height = -16
-            Font.Name = 'Tahoma'
-            Font.Style = []
-            ParentFont = False
-            TabOrder = 5
-          end
-          object Edit9: TEdit
-            Left = 575
-            Top = 159
-            Width = 146
-            Height = 30
-            AutoSize = False
-            CharCase = ecUpperCase
-            Font.Charset = DEFAULT_CHARSET
-            Font.Color = clWindowText
-            Font.Height = -16
-            Font.Name = 'Tahoma'
-            Font.Style = []
-            ParentFont = False
-            TabOrder = 6
-          end
-          object ComboBox1: TComboBox
-            Left = 727
-            Top = 48
-            Width = 145
-            Height = 29
-            AutoComplete = False
-            Font.Charset = DEFAULT_CHARSET
-            Font.Color = clWindowText
-            Font.Height = -17
-            Font.Name = 'Tahoma'
-            Font.Style = []
-            ParentFont = False
-            TabOrder = 7
-            Text = 'ComboBox1'
+          object Label23: TLabel
+            Left = 724
+            Top = 88
+            Width = 28
+            Height = 13
+            Caption = 'Bairro'
           end
           object DateTimePicker1: TDateTimePicker
             Left = 575
@@ -294,6 +183,92 @@ object Form3: TForm3
             Font.Name = 'Tahoma'
             Font.Style = []
             ParentFont = False
+            TabOrder = 0
+          end
+          object DBEdit100: TDBEdit
+            Left = 16
+            Top = 48
+            Width = 553
+            Height = 30
+            AutoSize = False
+            DataField = 'NOME'
+            DataSource = DataModule1.DataSource1
+            TabOrder = 1
+          end
+          object DBEdit2: TDBEdit
+            Left = 16
+            Top = 105
+            Width = 553
+            Height = 30
+            AutoSize = False
+            DataField = 'ENDERECO'
+            DataSource = DataModule1.DataSource1
+            TabOrder = 2
+          end
+          object DBEdit3: TDBEdit
+            Left = 575
+            Top = 105
+            Width = 143
+            Height = 30
+            AutoSize = False
+            DataField = 'NUMERO'
+            DataSource = DataModule1.DataSource1
+            TabOrder = 3
+          end
+          object DBComboBox1: TDBComboBox
+            Left = 727
+            Top = 48
+            Width = 145
+            Height = 29
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -17
+            Font.Name = 'Tahoma'
+            Font.Style = []
+            Items.Strings = (
+              'MASCULINO'
+              'FEMININO')
+            ParentFont = False
+            TabOrder = 4
+          end
+          object DBEdit5: TDBEdit
+            Left = 16
+            Top = 160
+            Width = 281
+            Height = 30
+            AutoSize = False
+            DataField = 'COMPLEMENTO'
+            DataSource = DataModule1.DataSource1
+            TabOrder = 5
+          end
+          object DBEdit6: TDBEdit
+            Left = 303
+            Top = 160
+            Width = 266
+            Height = 30
+            AutoSize = False
+            DataField = 'CIDADE'
+            DataSource = DataModule1.DataSource1
+            TabOrder = 6
+          end
+          object DBEdit7: TDBEdit
+            Left = 575
+            Top = 160
+            Width = 143
+            Height = 30
+            AutoSize = False
+            DataField = 'CEP'
+            DataSource = DataModule1.DataSource1
+            TabOrder = 7
+          end
+          object DBEdit4: TDBEdit
+            Left = 724
+            Top = 107
+            Width = 143
+            Height = 30
+            AutoSize = False
+            DataField = 'NUMERO'
+            DataSource = DataModule1.DataSource1
             TabOrder = 8
           end
         end
@@ -325,53 +300,43 @@ object Form3: TForm3
             Height = 13
             Caption = 'E-mail'
           end
-          object Edit5: TEdit
+          object DBEdit11: TDBEdit
+            AlignWithMargins = True
             Left = 16
             Top = 48
-            Width = 193
+            Width = 202
             Height = 30
             AutoSize = False
-            Font.Charset = DEFAULT_CHARSET
-            Font.Color = clWindowText
-            Font.Height = -16
-            Font.Name = 'Tahoma'
-            Font.Style = []
-            ParentFont = False
+            DataField = 'TELEFONE'
+            DataSource = DataModule1.DataSource1
             TabOrder = 0
           end
-          object Edit10: TEdit
+          object DBEdit13: TDBEdit
+            AlignWithMargins = True
             Left = 224
             Top = 48
-            Width = 193
+            Width = 202
             Height = 30
             AutoSize = False
-            Font.Charset = DEFAULT_CHARSET
-            Font.Color = clWindowText
-            Font.Height = -16
-            Font.Name = 'Tahoma'
-            Font.Style = []
-            ParentFont = False
+            DataField = 'CELULAR'
+            DataSource = DataModule1.DataSource1
             TabOrder = 1
           end
-          object Edit11: TEdit
+          object DBEdit14: TDBEdit
+            AlignWithMargins = True
             Left = 16
-            Top = 104
-            Width = 401
+            Top = 103
+            Width = 409
             Height = 30
             AutoSize = False
-            CharCase = ecUpperCase
-            Font.Charset = DEFAULT_CHARSET
-            Font.Color = clWindowText
-            Font.Height = -16
-            Font.Name = 'Tahoma'
-            Font.Style = []
-            ParentFont = False
+            DataField = 'EMAIL'
+            DataSource = DataModule1.DataSource1
             TabOrder = 2
           end
         end
         object GroupBox3: TGroupBox
-          Left = 4
-          Top = 199
+          Left = 20
+          Top = 301
           Width = 894
           Height = 289
           Caption = 'Informa'#231#245'es Trabalhista'
@@ -446,74 +411,6 @@ object Form3: TForm3
             Height = 13
             Caption = 'Demiss'#227'o'
           end
-          object Edit12: TEdit
-            Left = 16
-            Top = 59
-            Width = 97
-            Height = 30
-            AutoSize = False
-            Font.Charset = DEFAULT_CHARSET
-            Font.Color = clWindowText
-            Font.Height = -17
-            Font.Name = 'Tahoma'
-            Font.Style = []
-            ParentFont = False
-            TabOrder = 0
-          end
-          object ComboBox2: TComboBox
-            Left = 119
-            Top = 60
-            Width = 130
-            Height = 29
-            CharCase = ecUpperCase
-            Font.Charset = DEFAULT_CHARSET
-            Font.Color = clWindowText
-            Font.Height = -17
-            Font.Name = 'Tahoma'
-            Font.Style = []
-            ParentFont = False
-            TabOrder = 1
-            Items.Strings = (
-              'CLT'
-              'TERCEIRIZADO'
-              'ESTAGI'#193'RIO'
-              'VOLUNTARIO'
-              'PROPRIET'#193'RIO')
-          end
-          object ComboBox3: TComboBox
-            Left = 255
-            Top = 61
-            Width = 145
-            Height = 29
-            CharCase = ecUpperCase
-            Font.Charset = DEFAULT_CHARSET
-            Font.Color = clWindowText
-            Font.Height = -17
-            Font.Name = 'Tahoma'
-            Font.Style = []
-            ParentFont = False
-            TabOrder = 2
-          end
-          object ComboBox4: TComboBox
-            Left = 406
-            Top = 61
-            Width = 145
-            Height = 29
-            CharCase = ecUpperCase
-            Font.Charset = DEFAULT_CHARSET
-            Font.Color = clWindowText
-            Font.Height = -17
-            Font.Name = 'Tahoma'
-            Font.Style = []
-            ParentFont = False
-            TabOrder = 3
-            Items.Strings = (
-              'EM ATIVIDADE'
-              'EM F'#201'RIAS'
-              'AFASTADO'
-              'TREINAMENTO'
-              'INATIVO')
-          end
           object DateTimePicker2: TDateTimePicker
             Left = 557
             Top = 61
@@ -527,7 +424,7 @@ object Form3: TForm3
             Font.Name = 'Tahoma'
             Font.Style = []
             ParentFont = False
-            TabOrder = 4
+            TabOrder = 0
           end
           object DateTimePicker3: TDateTimePicker
             Left = 708
@@ -542,68 +439,113 @@ object Form3: TForm3
             Font.Name = 'Tahoma'
             Font.Style = []
             ParentFont = False
+            TabOrder = 1
+          end
+          object DBEdit1: TDBEdit
+            Left = 16
+            Top = 59
+            Width = 97
+            Height = 30
+            AutoSize = False
+            DataField = 'MATRICULA'
+            DataSource = DataModule1.DataSource1
+            TabOrder = 2
+          end
+          object DBComboBox2: TDBComboBox
+            Left = 119
+            Top = 60
+            Width = 122
+            Height = 29
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -17
+            Font.Name = 'Tahoma'
+            Font.Style = []
+            ParentFont = False
+            TabOrder = 3
+          end
+          object DBComboBox3: TDBComboBox
+            Left = 247
+            Top = 60
+            Width = 137
+            Height = 29
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -17
+            Font.Name = 'Tahoma'
+            Font.Style = []
+            ParentFont = False
+            TabOrder = 4
+          end
+          object DBComboBox4: TDBComboBox
+            Left = 390
+            Top = 61
+            Width = 137
+            Height = 29
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -17
+            Font.Name = 'Tahoma'
+            Font.Style = []
+            ParentFont = False
             TabOrder = 5
           end
-          object Edit4: TEdit
+          object DBEdit8: TDBEdit
             Left = 16
             Top = 115
             Width = 97
             Height = 30
             AutoSize = False
-            CharCase = ecUpperCase
-            Font.Charset = DEFAULT_CHARSET
-            Font.Color = clWindowText
-            Font.Height = -17
-            Font.Name = 'Tahoma'
-            Font.Style = []
-            ParentFont = False
+            DataField = 'MATRICULA'
+            DataSource = DataModule1.DataSource1
             TabOrder = 6
           end
-          object Edit13: TEdit
+          object DBEdit9: TDBEdit
             Left = 119
             Top = 115
             Width = 265
             Height = 30
             AutoSize = False
-            CharCase = ecUpperCase
-            Font.Charset = DEFAULT_CHARSET
-            Font.Color = clWindowText
-            Font.Height = -17
-            Font.Name = 'Tahoma'
-            Font.Style = []
-            ParentFont = False
+            DataField = 'MATRICULA'
+            DataSource = DataModule1.DataSource1
             TabOrder = 7
           end
-          object Edit14: TEdit
+          object DBEdit10: TDBEdit
             Left = 390
             Top = 115
             Width = 265
             Height = 30
             AutoSize = False
-            CharCase = ecUpperCase
-            Font.Charset = DEFAULT_CHARSET
-            Font.Color = clWindowText
-            Font.Height = -17
-            Font.Name = 'Tahoma'
-            Font.Style = []
-            ParentFont = False
+            DataField = 'MATRICULA'
+            DataSource = DataModule1.DataSource1
             TabOrder = 8
           end
-          object Edit15: TEdit
+          object DBEdit12: TDBEdit
             Left = 661
             Top = 115
-            Width = 176
+            Width = 192
             Height = 30
             AutoSize = False
-            CharCase = ecUpperCase
-            Font.Charset = DEFAULT_CHARSET
-            Font.Color = clWindowText
-            Font.Height = -17
-            Font.Name = 'Tahoma'
-            Font.Style = []
-            ParentFont = False
+            DataField = 'MATRICULA'
+            DataSource = DataModule1.DataSource1
             TabOrder = 9
           end
+        end
+        object Edit1: TEdit
+          Left = 287
+          Top = 13
+          Width = 121
+          Height = 21
+          TabOrder = 3
+        end
+        object Button1: TButton
+          Left = 168
+          Top = 16
+          Width = 75
+          Height = 25
+          Caption = 'Button1'
+          TabOrder = 4
+          OnClick = Button1Click
         end
       end
     end
@@ -614,7 +556,7 @@ object Form3: TForm3
     Left = 536
     Top = 88
     Bitmap = {
-      494C010105002400580020002000FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
+      494C010105002400740020002000FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
       0000000000003600000028000000800000004000000001002000000000000080
       0000000000000000000000000000000000000000000000000000000000000000
       00000000000000000000FEFEFE01FBFBFB04FBFBFB04FCFCFC03FEFEFE010000
@@ -1687,12 +1629,8 @@ object Form3: TForm3
             ImageIndex = 0
           end
           item
-            Action = Action2
-            Caption = '&Novo'
-            ImageIndex = 1
-          end
-          item
             Action = Action5
+            Caption = '&Gravar'
             ImageIndex = 4
           end
           item
@@ -1709,18 +1647,20 @@ object Form3: TForm3
       end>
     DisabledImages = ImageList1
     Images = ImageList1
-    Left = 636
-    Top = 247
+    Left = 604
+    Top = 87
     StyleName = 'Platform Default'
     object Action1: TAction
       Category = 'funcionario'
       Caption = 'Atualizar'
       ImageIndex = 0
+      OnExecute = Action1Execute
     end
     object Action2: TAction
       Category = 'funcionario'
       Caption = 'Novo'
       ImageIndex = 1
+      OnExecute = Action2Execute
     end
     object Action5: TAction
       Category = 'funcionario'

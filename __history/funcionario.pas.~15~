@@ -1,0 +1,104 @@
+unit funcionario;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, System.ImageList,
+  Vcl.ImgList, Vcl.RibbonLunaStyleActnCtrls, Vcl.Ribbon, System.Actions,
+  Vcl.ActnList, Vcl.PlatformDefaultStyleActnCtrls, Vcl.ActnMan, Vcl.ToolWin,
+  Vcl.ActnCtrls, Vcl.ExtCtrls, Vcl.Menus, Vcl.ComCtrls, Vcl.Grids, Data.DB,
+  Vcl.DBGrids, Vcl.DBCtrls, Vcl.Mask;
+
+type
+  TForm3 = class(TForm)
+    ImageList1: TImageList;
+    Ribbon1: TRibbon;
+    RibbonPage1: TRibbonPage;
+    RibbonGroup1: TRibbonGroup;
+    PageControl1: TPageControl;
+    TabSheet1: TTabSheet;
+    TabSheet2: TTabSheet;
+    Panel1: TPanel;
+    Label6: TLabel;
+    GroupBox1: TGroupBox;
+    Label1: TLabel;
+    Label2: TLabel;
+    Label3: TLabel;
+    Label4: TLabel;
+    Label5: TLabel;
+    Label7: TLabel;
+    Label8: TLabel;
+    Label9: TLabel;
+    Edit3: TEdit;
+    Edit6: TEdit;
+    Edit7: TEdit;
+    Edit8: TEdit;
+    Edit9: TEdit;
+    DateTimePicker1: TDateTimePicker;
+    GroupBox2: TGroupBox;
+    Label10: TLabel;
+    Label11: TLabel;
+    Label12: TLabel;
+    Edit5: TEdit;
+    Edit10: TEdit;
+    Edit11: TEdit;
+    GroupBox3: TGroupBox;
+    Label13: TLabel;
+    Label14: TLabel;
+    Label15: TLabel;
+    Label16: TLabel;
+    Label17: TLabel;
+    Label18: TLabel;
+    Label19: TLabel;
+    Label20: TLabel;
+    Label21: TLabel;
+    Label22: TLabel;
+    Edit12: TEdit;
+    ComboBox2: TComboBox;
+    ComboBox3: TComboBox;
+    ComboBox4: TComboBox;
+    DateTimePicker2: TDateTimePicker;
+    DateTimePicker3: TDateTimePicker;
+    Edit4: TEdit;
+    Edit13: TEdit;
+    Edit14: TEdit;
+    Edit15: TEdit;
+    Label23: TLabel;
+    ActionManager1: TActionManager;
+    Action1: TAction;
+    Action2: TAction;
+    Action3: TAction;
+    Action4: TAction;
+    Action5: TAction;
+    DBGrid1: TDBGrid;
+    DataSource1: TDataSource;
+    DBComboBox1: TDBComboBox;
+    procedure Action2Execute(Sender: TObject);
+    procedure Action1Execute(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form3: TForm3;
+
+implementation
+
+{$R *.dfm}
+
+uses Unit1;
+
+procedure TForm3.Action1Execute(Sender: TObject);
+begin
+TabSheet1.Show;
+end;
+
+procedure TForm3.Action2Execute(Sender: TObject);
+begin
+TabSheet2.Show;
+end;
+
+end.
